@@ -160,14 +160,13 @@ class Grafo():
                 if np.array_equal(i, r):                
                     sumSemRel +=1
                     break                                     
+       
+    
+        NC = sumTerm
+        NA = (sumRel + sumsemrel)
+        CRT = (NC+NA)
         
-                               
-        relevancia = (sumTerm + sumRel + sumSemRel)
-        
-        
-        #relevancia = (sumTerm + sumRel + sumSemRel) / (len(self.vertices) + len(pRelacoes) + len(pSemRelacoes))  
-        return relevancia
-
+        return CRT
 
 PTBR = '1'
 ENG = '2'
